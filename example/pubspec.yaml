@@ -1,0 +1,49 @@
+name: zebra_rfid_flutter
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  zebraRfid:
+    path: ../zebraRfid
+  permission_handler: ^12.0.0+1
+  flutter_launcher_icons: ^0.14.3
+  google_fonts: ^6.2.1
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+  dio: ^5.8.0+1
+  grouped_checkbox: ^2.0.0
+  modern_textfield: ^0.0.6
+  flutter_json_view: ^1.1.5
+  dotted_border: ^3.0.1
+  dotted_decoration: ^2.0.0
+  date_picker_plus: ^4.2.0
+  intl: ^0.20.2
+  fluentui_system_icons: ^1.1.273
+  flutter_inset_shadow: ^2.0.3
+  clay_containers: ^0.3.4
+  touch_ripple_effect: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icons/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/google_fonts/

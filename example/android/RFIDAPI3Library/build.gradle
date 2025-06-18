@@ -1,0 +1,14 @@
+configurations.maybeCreate("default")
+// artifacts.add("default", file('API3_LIB-release-2.0.2.114'))
+
+
+
+afterEvaluate {
+    def aarDir = file("$projectDir")
+    aarDir.listFiles().each { File file ->
+        if (file.name.endsWith(".aar")) {
+            println "Adding AAR to artifacts: ${file.name}"
+            artifacts.add("default", file)
+        }
+    }
+}
