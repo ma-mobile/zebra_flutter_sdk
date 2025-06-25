@@ -269,7 +269,7 @@ public class ZebraRfid extends BroadcastReceiver implements ZebraDevice, RfidEve
     @Override
     public void setMode(Modes mode) {
         try {
-        this.mode = mode;
+         this.mode = Modes.rfid;
         Log.d("RFIDPlugin", "Set mode method evoked and the mode is "+mode.toString());
         switch (mode) {
             case barcode:
